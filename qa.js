@@ -2,6 +2,10 @@ const questions = document.querySelectorAll('.question');
 
 questions.forEach(function (e) {
   const btn = question.querySelector('.question-btn');
+
+  btn.addEventListener('click', function () {
+    question.classList.toggle('show-text');
+  });
 });
 
 // const btns = document.querySelectorAll('.question-btn');
